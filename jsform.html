@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="C:\Users\preethi\Documents\icon.png">
+<link rel="stylesheet" href="formvalidate.css">
+</head>
+<body background = "C:\Users\preethi\Documents\woodBack.png" onpageshow="show()" onload="document.medical_insurance.Name.focus();">
+
+<script>
+/*$(document).ready(function(){
+    $(".btn btn-success").click(function(){
+        $("btn btn-success").slideUp();
+    });
+function f(){
+		window.scrollBy(-500,500);
+		alert("k");
+		}*/
+		function f()
+		{
+			window.open("C:\Users\preethi\Desktop\index.html");
+		}
+		function mouseover()
+		{
+			document.getElementById("d").style.color = "#ff8533";
+			document.getElementById("d").style.fontStyle = "bold";
+		}
+		function mouseout()
+		{
+			document.getElementById("d").style.color = "#ff5700";
+			document.getElementById("d").style.fontStyle = "italic";
+		}
+		function show()
+		{
+			var time= new Date().getHours();
+			if(time < 12)
+			 document.getElementById("greet").innerHTML = "Happy Morning!!!";
+		}
+	function validate(){
+		var s = document.getElementById("mobile-no").value;
+		var mail = document.getElementById("gmail").value;
+		var user = document.getElementById("Name").value ;
+		var dname = document.getElementById("dname").value;
+		var f=0;
+		if(s.length < 10){
+			document.getElementById("phone-no").innerHTML = "**Phone number must have 10 digits.**";
+			f=1;
+		}
+		if(mail == "")
+ 	 {
+ 	 	document.getElementById("cmail").innerHTML = "**E-mail is mandatory**";
+ 	 	f=1;
+ 	 }
+	 if(document.getElementById("Name").value == "")
+	 {
+		document.getElementById("firstname").innerHTML = "**Field name cannot be empty**";
+		f=1;
+	 }
+	 if(dname == "")
+	 {
+	 	document.getElementById("fatherName").innerHTML = "**Father's name is mandatory**";
+	 	f=1;
+	 }
+	 /*if(s = "")
+		document.getElementById("mobile-no").style.borderColor = "yellow" ;
+	 if( mail = "")
+		document.getElementById("cmail").style.borderColor = "yellow" ;
+	 if(user = "")
+		document.getElementById("Name").style.borderColor = "yellow" ; */
+	if(f == 1)
+		return false;
+	else
+		window.open("js_otherdetails_form.html")
+	 }
+
+</script>
+<div class="head">
+<h1 onmouseover = "mouseover()" onmouseout = "mouseout()" id="header"> Term Insurance </h1> </div>
+<div id="greet"> </div>
+ <form name ="medical_insurance" class ="form-medical" action = "">
+		<fieldset>
+		<pre>
+		<span class="heading"> FirstName </span>            <span class= "heading"> LastName </span> </pre>
+		<input type = "text"  class="input" name="Name" id="Name" style="font-size:16pt;">
+		<span id="firstname" style="color:red;"> </span>
+		 <input type= "text" name = "LastName" id="lastname" class="input" id="LastName" style="font-size:16pt;">
+		<br> <br>
+		<span class= "heading"> Sex </span>
+		<input type="radio" value="Male" class="radio-btn"name="Gender"> Male
+		<input type="radio" value="Female" class="radio-btn" name="Gender"> Female
+		<input type="radio" value="other" 	class="radio-btn" name="Gender" disabled> Other
+		<br> <br>
+		<span class="heading"> phone number </span>
+		<input type="tel" name="tel" id="mobile-no" class="input" style="font-size: 16pt;"> <span id="phone-no" style="color: red;"> </span> <br/>
+		<br/> <br/> <span class="heading"> Email </span>  <input id="gmail" type="email" name="email"  class="input" style="font-size:16pt;"> <span id ="cmail" style="color:red;"> <span> <br>
+		<br/><br/> <span class ="heading" style="font-size=16pt;"> DOB </span>
+		<input type = "date">
+		<br>
+		<br>
+		<span class ="heading"> Father's Name <input type ="text" id="dname" style="font-size: 16pt;"> <span id="fatherName"> </span>
+		<br><span class ="heading"> Marital status </span>
+    	<select style="border: 0 0 2px 0;">
+    		<option selected disabled> Marital status </option>
+        	<option>Married </option>
+        	<option>Unmarried </option>
+    	</select>
+		<br/>
+		<span class ="heading"> Are you an NRI?? </span>
+		<input type= "radio" name="origin" value="Yes"> Yes
+		<input type="radio" name="origin" value="No"> No
+		<button type ="button" onclick="validate()"> Submit </button>
+		</fieldset>
+	</form>
+	 <p id="arrow" style="font-size:19px;"> <a href="#header"> &#8593 </a> </p>
+</body>
+</html>

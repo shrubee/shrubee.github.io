@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="democss.css">
+</head>
+<body>
+																	<!-- slideshow script-->
+  <script>
+	  var slideIndex = 1;
+	  showSlides(slideIndex);
+	  function plusSlides(n) {
+		showSlides(slideIndex += n);
+	  }
+
+	  function currentSlide(n) {
+		showSlides(slideIndex = n);
+	  }
+
+	  function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+	  }
+  </script>
+
+														<!-- Intro page-->
+	<div class="bgimg-1" >
+		<div class="caption">
+		<frameset rows="25%,75%">
+		<frame src="nav.html">
+		<frame src="con.html">
+	</frameset>
+			<span class="border"><marquee  direction="right" behavior="alternate">The Money Game </marquee></span>
+		</div>
+	</div>
+	<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+		<h3 style="text-align:center;font-size: 35px;">What is <span style="color:#FF5733">Demonetization?</span></h3>
+		<p style="font-size:20px;">
+			</style>Demonetization is the act of stripping a currency unit of its status as legal tender.
+			It occurs whenever there is a change of national currency: The current form or forms of money is pulled from
+			circulation and retired, often to be replaced with new notes or coins. Sometimes, a country completely replaces the old currency with new currency.
+		</p>
+	</div>
+	<div id="history"class="bgimg-2">                         <!--History page-->
+		<div id="Incidents "> <a name="Incidents"> </a> </div>
+		<div style="position:relative;text-align:center;padding:50px 80px;text-align: justify;">
+		<h3  style="text-align:center;font-size:35px;">History of <span style="color:#FF5733">Demonetization</span></h3>
+		<hr>
+		<br>
+		<table class="histtab">
+			<tr>
+			<td>
+			<div class= "slider" >
+				<figure>
+					<img src="old500.jpg">
+					<img src="old1000.jpg">
+					<img src="ten.png">
+				</figure>
+			</div>00000
+			</td>
+			<td>
+			<h3 style="color:#ff5733;font-size:32px;margin-left:20px;">1946</h3>
+			<blockquote style="font-size: 22px;"><span style="color:#FF5733;font-size; 135px;">" </span>The sudden move to demonetize Rs 500 , Rs 1,000 and Rs 10,000 currency notes is not new. These notes were
+			demonetized in January 1946 and again in January 1978, according to RBI data.<span style="color:#FF5733;font-size; 35px;"> "</span>
+			</blockquote>
+		</td>
+  </tr>
+  <tr>
+    <td>
+      <br/>
+      <br/>
+    </td>
+    <td>
+      <br/>
+      <br/>
+    </td>
+    <td>
+      <br/>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+  <td>
+    <!--<img src="ten.png" width="100%" height="60%" >-->
+      <h3 style="color:#ff5733;font-size:32px;margin-left:20px;">2016</h3>
+      <blockquote style="font-size: 22px;"><span style="color:#FF5733;font-size; 35px;">" </span>The idea was adopted in recent times by Prime Minister Narendra Modi in November 2016. It was announced in the middle of the night. Although it recieved a plausible response in the beginning, it was faced with multiple displeasured reports later.
+          <span style="color:#FF5733;font-size; 35px;"> "</span>
+      </blockquote>
+  </td>
+  <td>
+  <div class= "slider1" >
+    <figure>
+      <img src="new500.jpg">
+      <img src="new1000.jpg">
+    </figure>
+  </div>
+  </td>
+</tr>
+  </table>
+</div>
+</div>
+<!--<div class= "slider" >
+  <figure>
+    <img src="projectimg.jpg">
+    <img src="projectimg2.jpg">
+    <img src="projectimg4.jpg">
+    <img src="projectimg8.png">
+    <img src="projectimg9.jpg">
+
+  </figure>
+</div>-->
+
+<div id="aftermath"style="position:relative;">
+	<div id="Memes"> <a name="Memes"> </a> </div>
+<div style="color: #777;background:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3  class="heading"><span style="color:#FF5733">Aftermath</span></h3>
+  <!--<table>
+    <td>
+      <div class="card">
+          <img class="imgRoundedCorners"width="95%" height="50%"src="petrol.jpeg">
+            <p class="heading"><span style="color:#FF5733">Petrol</span></p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;text-align:center;font-size: 18px;">Demonetisation impact: Petrol, diesel sales fall 20-25%, say dealers.
+Contrary to the common trend of motorists rushing to fuel stations to use their old `500 and `1,000 notes,
+the sale of petrol and diesel has seen a drop of 20-25% in November this year against the year-ago period, say dealers.
+      </p>
+      </div>
+    </td>
+      <td>
+        <div class="card">
+            <img class="imgRoundedCorners" width="95%" height="50%"src="atm.jpg">
+              <p class="heading"><span style="color:#FF5733">Atm</span><p>
+          <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;text-align:center;font-size: 18px;">A majority of the ATMs in India are in a predominantly defunct state,
+            more than six weeks after the demonetisation announcement.In spite of the recalibration of nearly all the machines in the country,
+            the value of currency being routed through the ATM network is fairly low.
+        </p>
+        </div>
+      </td>
+        <td>
+          <div class="card">
+              <img class="imgRoundedCorners"width="95%" height="50%"src="hospital.jpg">
+                <p class="heading"><span style="color:#FF5733">Hospitals</span></p>
+            <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;text-align:center;font-size: 18px;">Chaos was witnessed at various hospitals in the national capital as patients
+              and their family members faced inconvenience in buying medicines,
+              food and availing transportation after Rs 500 and Rs 1000 currency notes lost their legitimacy overnight.
+          </p>
+          </div>
+        </td>
+  </table>-->
+  <table>
+    <tr>
+    <td>
+      <img class="imgRoundedCorners"width="70%" height="60%"src="petrol.jpeg">
+    </td>
+    <td>
+      <p class="heading" style="margin-left:40px;"><span style="color:#FF5733">Petrol</span></p>
+      <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size:18px;width:500px;margin-left:50px;">Demonetisation impact: Petrol, diesel sales fall 20-25%, say dealers.
+        Contrary to the common trend of motorists rushing to fuel stations to use their old `500 and `1,000 notes,
+        the sale of petrol and diesel has seen a drop of 20-25% in November this year against the year-ago period, say dealers.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <br/>
+      <br/>
+    </td>
+    <td>
+      <br/>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p class="heading"><span style="color:#FF5733">Atm</span><p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;width:600px;font-size: 18px;">A majority of the ATMs in India are in a predominantly defunct state,
+          more than six weeks after the demonetisation announcement.In spite of the recalibration of nearly all the machines in the country,
+          the value of currency being routed through the ATM network is fairly low.
+        </p>
+    </td>
+    <td>
+        <img class="imgRoundedCorners"  style="margin-left:100px;" width="70%" height="60%"src="atm.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <br/>
+      <br/>
+    </td>
+    <td>
+      <br/>
+      <br/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <img class="imgRoundedCorners"width="70%" height="65%"src="hospital.jpg">
+    </td>
+    <td>
+      <p class="heading" style="margin-left:40px;"><span style="color:#FF5733">Hospitals</span></p>
+      <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size: 18px;width:500px;margin-left:50px;">Chaos was witnessed at various hospitals in the national capital as patients
+  and their family members faced inconvenience in buying medicines,
+  food and availing transportation after Rs 500 and Rs 1000 currency notes lost their legitimacy overnight.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <p class="heading" style="margin-left:50px;"><span style="color:#FF5733">Share Market Fall rate</span></p>
+  <ul>
+<li>
+The Indian markets have fallen a bit more than other emerging markets in Asia.
+</li>
+<li>
+The S and P BSE Sensex is down 3.8%, which is more than more or less all other Asian emerging markets.
+</li>
+<li>
+The extra fall in tthe Indian markets compared to others could be due to many factors, including high valuations, but it's very likely that the demonetization effect is mainly responsible for the fall.
+</li>
+<li>
+The Sensex is made up of very large companies which may not be impacted as much by the demonetization process.
+</li>
+<li>
+BSE's mid-cap and small-cap indices have fallen by over 6% each at the time of writing.
+</li>
+<li>
+And in truth, the largest impact of the government's move will be in the unorganised sector, which isn't represented in the markets.
+</li>
+</ul>
+
+    </td>
+    <td>
+        <img class="imgRoundedCorners" style="margin-left:100px;" width="90%" height="75%"src="graph1.png">
+    </td>
+  </tr>
+  </table>
+
+</div>
+</div>
+
+<div id="incidents"class="bgimg-3">
+	<div id="Memes"> <a name="Memes"> </a> </div>
+  <div style="position:relative;padding:50px 80px;text-align: justify;">
+  <h3  class="heading1"><span style="color:#FF5733">Incidents  </span></h3>
+  <br>
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <table>
+      <td>
+        <img class="imgRoundedCorners" src="incident1.JPG" width="100%" height= "80%">
+      </td>
+      <td>
+        <p style="margin-left:50px;font-size:30px;"><span style="color:#FF5733">Nand lal's heartbreak!</span></p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size:21px;width:500px;margin-left:50px;">
+          I had been trying for the last four days, but I couldn't get money. At last, when my turn came, t
+          hey told me that I will get only 10,000, but I required more money since I had to pay my maid and rent.
+          But they didn't give me the money and I broke down,"
+          said Nand Lal who lives in Old Gurgaon's Bhim Nagar area in a rented 8X10 room.
+        </p>
+      </td>
+    </table>
+
+  </div>
+
+  <div class="mySlides fade">
+    <table>
+      <td>
+        <img class="imgRoundedCorners" src="rope.png" width="90%" height= "60%">
+      </td>
+      <td>
+        <p  style="margin-left:50px;font-size:30px;"><span style="color:#FF5733">Breathe one's last!</span></p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size:22px;width:500px;margin-left:50px;">
+          Her children were hungry, but she waited for 5 days before setting her ablaze.
+          Razia, a 45-year-old construction worker in Aligarh set herself ablaze on November 20th,
+           when she could not get her old currency exchanged despite trying for 5 Days and died on December 5.
+        </p>
+      </td>
+    </table>
+  </div>
+
+  <div class="mySlides fade">
+    <table>
+      <td>
+        <img class="imgRoundedCorners" src="wedding.JPG" width="100%" height= "83%">
+      </td>
+      <td>
+        <p style="margin-left:50px;font-size:30px;"><span style="color:#FF5733">Head over Heels!</span></p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size:21px;width:500px;margin-left:50px;">
+          While people were queuing outside ATMs and banks, Karnataka billionaire and mining baron Janardhana Reddy had no such problem.
+          In fact he spent a whopping Rs 500 crore on his daughter Brahmini's wedding!
+        </p>
+      </td>
+    </table>
+  </div>
+
+  <div class="mySlides fade">
+    <table>
+      <td>
+        <img class="imgRoundedCorners" src="cashier.JPG" width="100%" height= "70%">
+      </td>
+      <td>
+        <p style="margin-left:50px;font-size:30px;"><span style="color:#FF5733">Albatross round your neck!</span></p>
+        <p style="padding-left:8px;padding-right: 8px;padding-bottom: 8px;font-size:21px;width:500px;margin-left:50px;">
+          On 19 December, A 33-year-old cashier with the State Bank of India allegedly committed suicide
+          by hanging himself from a ceiling fan at his residence at Tharad in Banaskantha district.
+          Though the police refused to assign any motive to the extreme step taken by Prem Shankar Prajapati,
+          his wife said he had talked about "heavy work pressure" at Tharad branch of the bank.
+          The deceased belonged to Barmer in Rajasthan.
+        </p>
+      </td>
+    </table>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+</div>
+<!--
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+
+  </div>
+</div>-->
+																	<!-- Image gallery for displaying memes-->
+<div id="memes"style="position:relative;">
+<div style="color: #777;background:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 class="heading"><span style="color:#FF5733">Memes</span></h3>
+  <table>
+    <tr>
+      <td>
+        <div class="zoomin1">
+          <img class="imgRoundedCorners1"src="meme1.jpg">
+        </div>
+      </td>
+      <td>
+        <div class="zoomin1">
+          <img class="imgRoundedCorners1"src="meme2.jpg">
+        </div>
+      </td>
+      <td>
+        <div class="zoomin1">
+            <img class="imgRoundedCorners1"src="meme3.jpg">
+         </div>
+       </td>
+       <td>
+         <div class="zoomin1">
+            <img class="imgRoundedCorners1"src="meme4.jpg">
+	     </div>
+        </td>
+    </tr>
+    <tr>
+		<td>
+			<div class="zoomin1">
+				<img class="imgRoundedCorners1"src="meme5.jpg">
+		    </div>
+        </td>
+        <td>
+            <div class="zoomin1">
+              <img class="imgRoundedCorners1"src="meme6.jpg">
+            </div>
+         </td>
+         <td>
+            <div class="zoomin1">
+                <img class="imgRoundedCorners1"src="meme7.jpg">
+             </div>
+         </td>
+         <td>
+            <div class="zoomin1">
+                  <img class="imgRoundedCorners1"src="meme8.jpg">
+             </div>
+         </td>
+    </tr>
+ </table>
+</div>
+</div>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 id="closure" style="text-align:center;color:white;">Closure</h3>
+    <p>The Indian economy has been provided a new lease of life: a "reset" if you will-with huge positive implications for
+      liquidity, inflation, fiscal and external deficit in the short term. Over the next two-three years,
+      improvement in India's position on transparency and corruption in the global stage will
+      further add to its investor appeal. With GST on the anvil, India is now on the cusp of higher growth in the
+      medium term-to be steered by the organized sectors including MSMEs and the revival of the private sector capex cycle.
+    </p> <br /> <br/>
+    <div class="form">
+      <form action="/action_page.php">
+      <caption> <span style="font-size:24px;font-weight:bold;">Feedback</span></caption> <br />
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br />
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="india">India</option>
+        <option value="indonesia">Indonesia</option>
+      </select> <br />
+
+      <label for="subject">Subject</label> <br />
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;width:500px;"></textarea><br />
+
+      <input type="submit" value="Submit"><br />
+
+      </form>
+    </div>
+    <center>
+      <table>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="fb.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="insta.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="twiti.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="in.png">
+          </div>
+        </td>
+        <td>
+          <div class="zoomin">
+            <img style="margin:10px;" width="50px" height="50px" src="g+.png">
+          </div>
+        </td>
+      </table>
+    </center>
+    <p style="text-align:center;color:white;">&copy; 2017 Demonetization All Rights Reserved.</P>
+</body>
+</html>

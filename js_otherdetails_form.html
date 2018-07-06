@@ -1,0 +1,112 @@
+
+<html>
+<head>
+<title>form</title>
+<link rel="shortcut icon" href="C:\Users\preethi\Documents\icon.png">
+<link rel="stylesheet" href="detailsvalidate.css">
+</head>
+<body onload="JavaScript:AutoRefresh(6000);">
+	<script>
+	/*trigger(){
+		document.getElementById("content").addEventListener("mouseover",popup);
+		function popup()
+			alert("Welcome!!!");
+		}
+		function f()
+		{
+			var x = add_check();
+			if(x==0)
+				g();
+			else
+				alert("Enter Details properly");
+		} */
+		function f(){
+			window.open("payment.html");
+		}
+	/*	function add_check(){
+			 var a = document.getElementById("add").value;
+			 if(a == "")
+			 {
+				 document.getElementById("aname").innerHTML="#Enter Address Properly.";
+			 }
+		} */
+		function add_check(){
+			var flag=0;
+			var a = document.getElementById("add").value;
+			if(a == ""){
+	 		 flag=1;
+	 	 	document.getElementById("aname").innerHTML = "#Address is mandatory";
+			return flag;
+			}
+			else  {
+			   var re=/^[a-zA-Z].{5,20}$/;
+				 var te=re.test(dname);
+				 if(te==true){
+					 flag=0;
+					 document.getElementById("aname").innerHTML="";
+				return flag;
+				}
+				else{
+					flag=1;
+					document.getElementById("aname").innerHTML = "#Address should be entered between 5 to 20 letters!";
+					return flag;
+				}
+			}
+		}
+	</script>
+	<form name= "details" id="insurance">
+	<span class="heading"> LIFE INSURANCE </span>
+	<p id="content"> If you had prior coverage ,and have transfered/been reappointed to HQ or reinstated after a break in service,Please indicate if you wish to re-enroll.This must be done within 60 days of your effective date: </p>
+	<input type="radio" name="ref" value="yes"> Yes <br />
+	<input type="radio" name="ref" value="No"> No <br /> <br />
+	<table border="3px">
+		<tr>
+			<td> APPLICATION/CHANGE REQUEST FOR MEDICAL
+				<input type="radio" name="rad" value="yes">Yes
+			<input type="radio" name="rad" value="No">No</td>
+			<td> APPLICATION/CHANGE REQUEST FOR DENTAL<input type="radio" name="radd" value="yes"> Yes
+			<input type="radio" name="radd" value="No"> No </td>
+		</tr>
+		<tr >
+			<td colspan="2"> <center> Please select the appropiate one  </center> </td>
+		<tr>
+			<td> <input type="checkbox" name="Medical" value="New Medical coverge ">New Medical coverge <br />
+				 <input type="checkbox" name="Medical" value="Transferred">Transferred <br />
+				 <input type="checkbox" name="Medical" value="Reinstatement After break in service">Reinstatement After break in service <br />
+				 <input type="checkbox" name="Medical" value="Add spouse/child">Add spouse/child<br />
+				 <input type="checkbox" name="Medical" value="Delete spouse/child">Delete spouse/child<br />
+				 <input type="checkbox" name="Medical" value="Terminate Medical Coverage"> Terminate Medical Coverage
+			</td> <br />
+			<td>
+				<input type="checkbox" name="Dental" value="">New Dental coverge <br />
+				<input type="checkbox" name="Dental" value="Transferred">Transferred <br />
+				<input type="checkbox" name="Dental" value="Reinstatement After break in service">Reinstatement After break in service <br>
+				<input type="checkbox" name="Dental" value="Add spouse/child">Add spouse/child <br>
+				<input type="checkbox" name="Dental" value="Delete spouse/child">Delete spouse/child<br>
+				<input type="checkbox" name="Dental" value="Terminate Medical Coverage">Terminate Medical Coverage <br>
+			</td>
+		</tr>
+		<tr>
+	</table>
+	<br> <br>
+	<span class="heading"> Permanent address </span> <br> <br>
+	<input type="text" size="90%" name="address" id="add" onblur="add_check()" required="">
+	<span id="aname"></span> <br> <br>
+	<input type="text" size="50%"> <br />
+	<span class="heading"> City </span>
+	<input type="text" size="32%" required="">
+	<br> <br>
+	<select id="continent" name="continent" required="">
+		<option selected disabled>Continent </option>
+		<option value="Asia">Asia</option>
+		<option value="Europe">Europe</option>
+		<option value="Astralia">Australia</option>
+		<option value="Africa">Africa</option>
+		<option value="North America">North America</option>
+		<option value="South America">South America</option>
+		<option value="Antarctica">Antarctica</option>
+	</select>
+	<button type="button" onclick="f()">Proceed to Payment </button>
+</form>
+</body>
+</html>

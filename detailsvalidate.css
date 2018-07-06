@@ -1,0 +1,64 @@
+body{
+	line-height: normal;
+	font-size: 20px;
+	background-color: #1C2833;
+	color: #48C9B0;
+}
+.heading{
+	font-size: 16pt;
+	color: #48C9B0;
+	font-style: helvetica;
+
+}
+form{
+	color: #48C9B0;
+	font-size: 18px;
+	margin: 60px;
+	height: 50%;
+	width: 60%;
+}
+textarea{
+	font-size: 18px;
+	padding: 3px;
+	margin-top:3px;
+	top: 2px;
+}
+ input{
+	 color: #fff;
+	 font-size: 18px;
+	outline: 0;
+	margin: 0px;
+	border-width: 0 0 2px 0;
+	border-color:#48C9B0;
+	background: transparent;
+	font-size: 16pt;
+	transition: width 0.4 ease-in-out;
+}
+table,td,tr{
+	font-size: 18px;
+	margin: 0px;
+	padding:2px;
+}
+footer{
+	height:18%;
+	width:100%;
+}
+
+#continent option{
+	width:500px;
+	height:100px;
+}
+button{
+	height: 50px;
+	width: 200px;
+	color: #6E2C00;
+	margin: 40px 100px;
+	border-radius:5px;
+	box-shadow: 0 0 10px #FEF;
+	z-index: 5px;
+}
+button: hover{
+	width: 400px;
+	height: 100px;
+	cursor: pointer;
+}

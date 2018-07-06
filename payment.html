@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Details </title>
+	<link rel="stylesheet" href="pay.css">
+	<link href="http://www.1001fonts.com/alex-brush-font.html">
+</heasd>
+<body>
+	<script>
+	var flag=0;
+	function cardnoo(){
+		var num = document.getElementById("cardno").value;
+		if(num.length < 16){
+			flag=1;
+			document.getElementById("numm").innerHTML="#Card Number must have 16 digits.";
+			return flag;
+		}else {
+			flag=0;
+			document.getElementById("numm").innerHTML="";
+			return flag;
+		}
+	}
+	function mycvv(){
+		var c = document.getElementById("cvv").value;
+		if(c.length != 3){
+			flag=1;
+			document.getElementById("validity").innerHTML=("#Only three characters are allowed.");
+			return flag;
+		}else {
+			flag=0;
+			document.getElementById("validity").innerHTML="";
+			return flag;
+		}
+	}
+	function myname(){
+		var dname = document.getElementById("cname").value;
+		if(dname == ""){
+ 		 flag=1;
+ 	 	document.getElementById("aname").innerHTML = "#CardHolder Name is mandatory";
+		return flag;
+		}
+		else  {
+		   var re=/^[a-zA-Z].{5,20}$/;
+			 var te=re.test(dname);
+			 if(te==true){
+				 flag=0;
+				 document.getElementById("aname").innerHTML="";
+			return flag;
+		}
+			else{
+				flag=1;
+				document.getElementById("aname").innerHTML = "#CardHolder Name should be entered between 5 t0 20 letters!";
+				return flag;
+			}
+		}
+	}
+	function mysubmit(){
+
+			alert("You will be redirected to your Bank's page. \n It might take few seconds.\nPlease do not refresh this page of your browser");
+			alert("Thanks for registering in Coverfox. \n We assure you to take care and provide best service to you.");
+		window.open("cover.html");
+
+	}
+	function rama(){
+		var	a=cardnoo();
+		var a1=mycvv();
+		var a2=myname();
+		if(a==0&& a1==0 && a2==0)
+         mysubmit();
+				 else {
+				 	alert("Enter Details Properly...");
+				 }
+	}
+</script>
+<!-- <div class="navi">
+<div class="block1">
+<nav>
+<li><a href="#credit">Credit Card</li>
+<li><a href="#debit">Debit Card</li>
+</nav>
+</div>
+</div> -->
+<div class="border">
+	<center>
+<caption> Payment Details </caption>
+</center>
+</div>
+<div class="form">
+<form name="pay">
+	<label>Card Number: </label>
+	<input type="text" name="card" id="cardno" onchange="cardnoo()" placeholder="Enter the Card number here..." required="">
+	  <span id="numm"> </span> <br />
+	<label>Card Expiry:</label>  <br />
+	<select required>
+    <option value="01">January</option>
+    <option value="02">February </option>
+    <option value="03">March</option>
+    <option value="04">April</option>
+    <option value="05">May</option>
+    <option value="06">June</option>
+    <option value="07">July</option>
+    <option value="08">August</option>
+    <option value="09">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+  </select>
+  <select required>
+    <option value="17"> 2017</option>
+    <option value="18"> 2018</option>
+    <option value="19"> 2019</option>
+    <option value="20"> 2020</option>
+    <option value="21"> 2021</option>
+	  <option value="22"> 2022</option>
+	  <option value="23"> 2023</option>
+  </select> <br />
+	<label>Card Holder name: </label>
+	<input type="text" name="card" id="cname"  required="" onchange="myname()" placeholder="Enter the CardHolder Name here...">
+	<span id="aname"></span> <br />
+
+	<label>CVV </label>
+	<div class="cvv">
+	<input type="password" name="pass" id="cvv" onchange="mycvv()" required="" placeholder="Enter the CVV here...">
+	<span id="validity"></span>
+	</div>
+
+	<button type="button" onclick="rama()">Finish and Pay</button>
+</form>
+</div>
+</body>
+</html>

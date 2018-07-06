@@ -1,0 +1,110 @@
+body{
+	background-color: #fff;
+
+}
+form{
+	margin-top: 70px;
+	margin-left: 300px;
+	margin-right: 100px;
+}
+.heading{
+	color:#ff5700;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 20px;
+	line-height: 200%;
+	margin-left: 20px;
+}
+textarea{
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 500px;
+  height: 100px;
+}
+fieldset {
+	border: 2px solid #999;
+	border-radius: 10px;
+	z-index: 100px;
+	box-shadow: 0 0 10px #999;
+	padding: 15px 5px;
+	background-image: url('C:\Users\preethi\Documents\woodBack.png');
+}
+.input{
+	margin-left: 20px;
+}
+input {
+	color: #000;
+  outline: 0;
+  border-width: 0 0 2px 0;
+  border-color: #ff5700;
+  background: transparent;
+}
+input:hover{
+  border-color: #1a53ff;
+}
+.part-1{
+	background-color:white;
+	height: 50%
+}
+.part-2{
+	background-color:white;
+	height: 50%;
+	}
+/*.radio-btn{
+	-webkit-appearance : none;
+	content: '';
+	width: 16px;
+	height: 16px;
+	background-color: #ff5050;
+	border-radius: 9px;
+	outline: 5px;
+}
+.radio-btn:checked:hover{
+	content : '';
+	background-color: #fedf77;
+	border-radius: 50%;
+	margin:  2px;
+	height: 5px;
+	width: 5px;
+}*/
+h1{
+	font-family: helvetica;
+	font-size: 50px;
+	color: #ff5700;
+	text-align: center;
+	padding-left: 100px;
+	top: 50px;
+}
+.head{
+		background-color: gray;
+		height: 80px;
+		width: 100%;
+}
+button{
+	height: 50px;
+	width: 200px;
+	color: #cfff8a;
+	margin: 10px 170px;
+	border-radius:5px;
+	box-shadow: 0 0 10px #999;
+	z-index: 5px;
+	color : #ff5700;
+}
+button: hover{
+	width: 400px;
+	height: 100px;
+	cursor: pointer;
+}
+#scrollTopBtn {
+    display: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 40px;
+    z-index: 10;
+    bottom: 40px;
+    background-color: #4CB96B;
+    color: #fff;
+    cursor: pointer
+}
